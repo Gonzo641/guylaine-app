@@ -1,0 +1,7 @@
+Todo:
+
+- Fond gradient
+- Responsive
+- Petite animation surlignage sur éléments navbar
+- Contact
+- Reflexologie
