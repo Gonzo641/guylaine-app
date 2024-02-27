@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import PolygonBackground from "@/components/PolygonBackground";
 
 
 
@@ -21,6 +22,7 @@ export default function ShiatsuPage() {
         alt="image"
         className="-z-10 object-cover"
       /> */}
+      <PolygonBackground />
       <div className='container flex space-x-12'>
         <div>
           <motion.h1 
@@ -92,7 +94,7 @@ export default function ShiatsuPage() {
           </motion.p>
         </div>
         <div>
-          <Carousel className="w-[400px]">
+          <Carousel className="w-[400px] pt-12">
             <CarouselContent>
               <CarouselItem>
               <Image

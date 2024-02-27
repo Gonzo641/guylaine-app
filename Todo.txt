@@ -1,7 +1,10 @@
 Todo:
 
-- Fond gradient
+Done - Fond gradient
+Done - Card pour les tarifs
 - Responsive
-- Petite animation surlignage sur éléments navbar
-- Contact
+    - Page d'acceuil voir à mettre limage grid pour les tablettes
+
+
+- Contact (utilisé Hover Card de shadcn pour insta/facebook)
 - Reflexologie

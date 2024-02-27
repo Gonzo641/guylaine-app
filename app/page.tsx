@@ -3,21 +3,23 @@
 import Image from "next/image";
 import { motion } from 'framer-motion'
 import ImageGrid from "@/components/ImageGrid";
+import PolygonBackground from "@/components/PolygonBackground";
 
 
 export default function Home() {
   return (
-    <section className='py-12'>
+    <section className='py-20'>
       {/* <Image
         src="/image/GuylaineProfil/guylaine2.jpeg"
         fill
         alt="image"
         className="-z-10 object-cover"
       /> */}
-      <div className='container flex space-x-6'>
-        <div>
+      <PolygonBackground />
+      <div className='container flex flex-col xl:flex-row md:space-x-6'>
+        <div className="mb-12 xl:mb-0">
           <motion.h1 
-            className='mb-12 text-6xl font-bold text-white'
+            className='mb-12 sm:text-6xl text-4xl font-bold text-white'
             initial={{ opacity: 0, x: 100}}
             animate={{ opacity: 1, x: 0 }}
             transition={{
@@ -26,7 +28,7 @@ export default function Home() {
               ease: [0, 0.71, 0.2, 1.01]
             }}
           >
-            Bonjour et<br/> bienvenue
+            Bonjour et bienvenue
           </motion.h1>
           <motion.p 
           className='max-w-3xl pb-4 text-white'
@@ -56,7 +58,16 @@ export default function Home() {
             et donc de le libérer des tensions, douleurs, fatigue, épuisement… 
           </motion.p>
         </div>
-        <ImageGrid />  
+        <ImageGrid />
+        <div className="flex justify-center items-center">
+          <Image 
+            src="/image/Shiatsu/shiatsu3.jpeg"
+            width={400}
+            height={200}
+            alt="image"
+            className="object-cover xl:hidden rounded-lg"
+          />
+        </div>  
       </div>
     </section>
   )

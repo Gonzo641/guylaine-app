@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { motion } from 'framer-motion'
+import PolygonBackground from "@/components/PolygonBackground";
+import { Separator } from "@/components/ui/separator";
 
 
 export default function JeMePresentePage() {
@@ -13,6 +15,7 @@ export default function JeMePresentePage() {
         alt="image"
         className="-z-10 object-cover"
       /> */}
+      <PolygonBackground />
       <div className='container flex space-x-12'>
         <div>
           <motion.h1 
@@ -27,8 +30,8 @@ export default function JeMePresentePage() {
           >
             JE ME PRÉSENTE
           </motion.h1>
-          <motion.p 
-          className='max-w-3xl pb-4 text-white'
+          <motion.h2 
+          className='max-w-3xl pb-4 text-3xl text-white'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -38,7 +41,18 @@ export default function JeMePresentePage() {
           }}
           >
           Je m’appelle Guylaine et j’ai 47 ans. 
-          </motion.p>
+          </motion.h2>
+          <motion.div className="pb-8 w-full"
+                      initial={{ opacity: 0, y: 100}}
+                      animate={{ opacity: 1, y: 0 }}
+                     transition={{
+                       duration: 0.8,
+                       delay: 0.9,
+                       ease: [0, 0.71, 0.2, 1.01]
+                     }}           
+          >
+            <Separator />
+          </motion.div>
           <motion.p 
           className='max-w-3xl pb-4 text-white'
           initial={{ opacity: 0, y: 100}}
@@ -56,7 +70,7 @@ export default function JeMePresentePage() {
           (Syndicat Professionnel du Shiatsu).
           </motion.p>
           <motion.p 
-          className='max-w-3xl pb-4 text-white'
+          className='max-w-3xl pb-2 text-white'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -67,6 +81,17 @@ export default function JeMePresentePage() {
           >
           Le Shiatsu m’a amené à m’intéresser à des zones très spécifiques du corps, où l’on stocke particulièrement 
           les tensions, et à approfondir ma pratique en découvrant de nouvelles techniques.<br /><br />
+          </motion.p>
+          <motion.p 
+          className='max-w-3xl pb-4 text-white'
+          initial={{ opacity: 0, y: 100}}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            delay: 1.5,
+            ease: [0, 0.71, 0.2, 1.01]
+          }}
+          >
           La première zone a été le ventre et je me suis formée au Tchi Nei Tsang auprès de Anne Moreau. 
           La seconde a été la crâne, la nuque, les épaules au travers de la Réflexologie cranio-faciale que j’ai appris 
           à l’école Evimeria.<br />
@@ -78,7 +103,7 @@ export default function JeMePresentePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 0.8,
-            delay: 1.5,
+            delay: 1.7,
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
@@ -86,14 +111,14 @@ export default function JeMePresentePage() {
           spécifiques de chacun. 
           </motion.p>
         </div>
-        <div>
-        <Image
-          src="/image/GuylaineProfil/guylaine2.jpeg"
-          width={500}
-          height={200}
-          alt="image"
-          className="object-cover rounded-xl"
-        />
+        <div className="pt-28">
+          <Image
+            src="/image/GuylaineProfil/guylaine2.jpeg"
+            width={500}
+            height={200}
+            alt="image"
+            className="object-cover rounded-xl"
+          />
         </div>
       </div>
     </section>

@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import PolygonBackground from "@/components/PolygonBackground";
 
 
 export default function ChiNeiTsangPage() {
@@ -20,6 +21,7 @@ export default function ChiNeiTsangPage() {
         alt="image"
         className="-z-10 object-cover"
       /> */}
+      <PolygonBackground />
       <div className='container flex space-x-12'>
         <div>
           <motion.h1 
@@ -45,8 +47,8 @@ export default function ChiNeiTsangPage() {
           }}
           >
           Le Chi Nei Tsang est un massage profond du ventre, qui permet de prendre conscience des tensions physiques nichées dans 
-          l’abdomen et des charges émotionnelles qui leur sont liées. <br />
-          Il détoxifie les organes interne et facilite leur fonctionnement. Il allège les tensions et facilite l’élimination. 
+          l’abdomen et des charges émotionnelles qui leur sont liées. <br /><br />
+          Il détoxifie les organes interne et facilite leur fonctionnement.<br /> Il allège les tensions et facilite l’élimination. 
           </motion.p>
           <motion.p 
           className='max-w-3xl pb-4 text-white'
@@ -60,7 +62,7 @@ export default function ChiNeiTsangPage() {
           >
           Le Chi Nei Tsang est une approche viscérale et holistique.<br /><br /> Ce massage à la fois très doux mais également profond et 
           dynamique, va aider les organes internes du corps à fonctionner plus facilement.<br /><br /> Mais il va également permettre de se 
-          reconnecter à son corps, de dénouer tensions et douleurs périphériques, de retrouver vitalité et bien-être. 
+          reconnecter à son corps, de dénouer tensions et douleurs périphériques, de retrouver vitalité et bien-être. <br />
           Il permet d’agir à la fois sur le plan physique mais également de libérer les tensions émotionnelles. 
           </motion.p>
           <motion.p 
@@ -74,11 +76,11 @@ export default function ChiNeiTsangPage() {
           }}
           >
           La séance va commencer par un moment de détente, de respiration afin de détendre le ventre et le préparer à recevoir 
-          le massage. Elle se poursuit sur le ventre avec de l’huile. 
+          le massage.<br /> Elle se poursuit sur le ventre avec de l’huile. 
           </motion.p>
         </div>
         <div>
-          <Carousel className="w-[400px]">
+          <Carousel className="w-[400px] pt-12">
             <CarouselContent>
               <CarouselItem>
               <Image

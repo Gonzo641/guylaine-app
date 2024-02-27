@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const ImageGrid = () => {
   return (
-    <div className="space-y-2">
-    <div className="flex space-x-2">
+    <div className="space-y-2 hidden xl:block">
+    <div className="flex space-x-2 w-full">
       <Image
         src="/image/Shiatsu/shiatsu1.jpeg"
         width={200}

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from 'framer-motion'
+import PolygonBackground from "@/components/PolygonBackground";
 
 
 export default function ReflexologiePage() {
@@ -13,6 +14,7 @@ export default function ReflexologiePage() {
         alt="image"
         className="-z-10 object-cover"
       /> */}
+      <PolygonBackground />
       <div className='container'>
         <motion.h1 
           className='mb-12 text-6xl font-bold text-white'
