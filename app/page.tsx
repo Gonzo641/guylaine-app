@@ -8,7 +8,7 @@ import PolygonBackground from "@/components/PolygonBackground";
 
 export default function Home() {
   return (
-    <section className='py-20'>
+    <section className='sm:py-20 py-8'>
       {/* <Image
         src="/image/GuylaineProfil/guylaine2.jpeg"
         fill
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center">
             <motion.h1 
-              className='mb-12 sm:text-6xl text-4xl font-bold'
+              className='mb-12 sm:text-6xl text-4xl font-bold text-center'
               initial={{ opacity: 0, x: 100}}
               animate={{ opacity: 1, x: 0 }}
               transition={{
