@@ -18,45 +18,60 @@ export default function Home() {
       <PolygonBackground />
       <div className='container flex flex-col xl:flex-row md:space-x-6'>
         <div className="mb-12 xl:mb-0">
-          <motion.h1 
-            className='mb-12 sm:text-6xl text-4xl font-bold text-white'
-            initial={{ opacity: 0, x: 100}}
-            animate={{ opacity: 1, x: 0 }}
+          <div className="flex justify-center items-center">
+            <Image
+              src="/image/Logo/Logo_Guylaine1.png"
+              width={300}
+              height={100}
+              alt="image"
+              className="object-cover" 
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <motion.h1 
+              className='mb-12 sm:text-6xl text-4xl font-bold'
+              initial={{ opacity: 0, x: 100}}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.7,
+                ease: [0, 0.71, 0.2, 1.01]
+              }}
+            >
+              Bonjour et bienvenue
+            </motion.h1>
+          </div>
+          <div className="flex justify-center items-center">
+            <motion.p 
+            className='max-w-3xl pb-4 text-center font-semibold'
+            initial={{ opacity: 0, y: 100}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.8,
-              delay: 0.7,
+              delay: 1,
               ease: [0, 0.71, 0.2, 1.01]
             }}
-          >
-            Bonjour et bienvenue
-          </motion.h1>
-          <motion.p 
-          className='max-w-3xl pb-4 text-white'
-          initial={{ opacity: 0, y: 100}}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.8,
-            delay: 1,
-            ease: [0, 0.71, 0.2, 1.01]
-          }}
-          >
-            Envie de vous offrir une parenthèse de douceur ? Ou de l’offrir à une personne chère ? 
-            <br />Je vous invite à découvrir les différents soins que je propose. 
-          </motion.p>
-          <motion.p 
-          className='max-w-3xl text-white'
-          initial={{ opacity: 0, y: 100}}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.8,
-            delay: 1.2,
-            ease: [0, 0.71, 0.2, 1.01]
-          }}
-          >
-            Le point commun entre tous est de procurer une profonde relaxation du corps et de l’esprit et un éveil 
-            du corps.<br /><br /> Ils invitent à se reconnecter au corps afin de lui permettre de retrouver sa vitalité, 
-            et donc de le libérer des tensions, douleurs, fatigue, épuisement… 
-          </motion.p>
+            >
+              Envie de vous offrir une parenthèse de douceur ? Ou de l’offrir à une personne chère ? 
+              <br />Je vous invite à découvrir les différents soins que je propose. 
+            </motion.p>
+          </div>
+          <div className="flex justify-center items-center">
+            <motion.p 
+            className='max-w-3xl text-center font-semibold'
+            initial={{ opacity: 0, y: 100}}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 1.2,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+            >
+              Le point commun entre tous est de procurer une profonde relaxation du corps et de l’esprit et un éveil 
+              du corps.<br /><br /> Ils invitent à se reconnecter au corps afin de lui permettre de retrouver sa vitalité, 
+              et donc de le libérer des tensions, douleurs, fatigue, épuisement… 
+            </motion.p>
+          </div>
         </div>
         <ImageGrid />
         <div className="flex justify-center items-center">
@@ -65,7 +80,7 @@ export default function Home() {
             width={400}
             height={200}
             alt="image"
-            className="object-cover xl:hidden rounded-lg"
+            className="object-cover lg:hidden rounded-lg"
           />
         </div>  
       </div>

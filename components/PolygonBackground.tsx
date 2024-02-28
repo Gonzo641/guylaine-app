@@ -19,7 +19,7 @@ const PolygonBackground = () => {
         aria-hidden="true">
 
         <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2
-                        rotate-[30deg] bg-gradient-to-tr from-black to-white opacity-30
+                        rotate-[30deg] bg-gradient-to-tr from-[#2bcceb] to-[#09ba9d] opacity-30
                         sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             style={{
                 clipPath:

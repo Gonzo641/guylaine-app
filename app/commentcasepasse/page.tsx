@@ -127,7 +127,8 @@ export default function CommentCaSePassePage() {
       <PolygonBackground />
       <div className='flex flex-col justify-center items-center mx-8'>
         <motion.h1 
-          className='mb-12 text-6xl font-bold text-white'
+          className='mb-12 text-4xl sm:text-6xl font-bold text-center bg-gradient-to-r 
+                  from-[#0a98a7] via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -139,7 +140,7 @@ export default function CommentCaSePassePage() {
           COMMENT ÇA SE PASSE ?
         </motion.h1>
         <motion.p 
-          className=' pb-4 text-white'
+          className='pb-4 text-center font-semibold'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -152,7 +153,7 @@ export default function CommentCaSePassePage() {
         convenir ensemble d’un rendez-vous pour le soin que vous souhaitez. 
         </motion.p>
         <motion.p 
-          className='max-w-lg pb-12 text-white'
+          className='max-w-lg pb-12 text-center font-semibold'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -165,7 +166,7 @@ export default function CommentCaSePassePage() {
         </motion.p>
         <TarifCard />
         <motion.p 
-          className='max-w-lg pt-10 text-white'
+          className='max-w-lg pt-10 text-center font-semibold'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{

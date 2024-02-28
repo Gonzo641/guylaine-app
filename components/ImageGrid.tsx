@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const ImageGrid = () => {
   return (
-    <div className="space-y-2 hidden xl:block">
-    <div className="flex space-x-2 w-full">
+    <div className="space-y-2 hidden lg:block">
+    <div className="flex justify-center space-x-2 w-full">
       <Image
         src="/image/Shiatsu/shiatsu1.jpeg"
         width={200}
@@ -19,7 +19,7 @@ const ImageGrid = () => {
         className="object-cover rounded-lg"
       />
     </div>
-    <div className="flex space-x-2">
+    <div className="flex justify-center space-x-2">
       <Image
         src="/image/ReflexologieCraintFacial/craintfacial1.jpeg"
         width={300}

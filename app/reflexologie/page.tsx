@@ -17,7 +17,8 @@ export default function ReflexologiePage() {
       <PolygonBackground />
       <div className='container'>
         <motion.h1 
-          className='mb-12 text-6xl font-bold text-white'
+          className='mb-12 text-3xl sm:text-6xl font-bold bg-gradient-to-r 
+                  from-[#0a98a7] via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -28,9 +29,9 @@ export default function ReflexologiePage() {
         >
           LA RÉFLEXOLOGIE
         </motion.h1>
-        <div className="flex">
+        <div className="flex flex-col xl:flex-row">
           <motion.h2 
-            className='mb-12 text-4xl font-bold text-white'
+            className='mb-12 text-xl sm:text-3xl font-bold'
             initial={{ opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -42,7 +43,7 @@ export default function ReflexologiePage() {
             La réflexologie craint faciale
           </motion.h2>
           <motion.h2 
-            className='mb-12 text-4xl font-bold text-white ml-auto'
+            className='mb-12 text-xl sm:text-3xl font-bold ml-auto'
             initial={{ opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0 }}
             transition={{

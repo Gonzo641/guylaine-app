@@ -16,10 +16,11 @@ export default function JeMePresentePage() {
         className="-z-10 object-cover"
       /> */}
       <PolygonBackground />
-      <div className='container flex space-x-12'>
+      <div className='container flex flex-col xl:flex-row xl:space-x-12'>
         <div>
           <motion.h1 
-            className='mb-12 text-6xl font-bold text-white'
+            className='mb-12 text-4xl sm:text-6xl font-bold bg-gradient-to-r 
+                    from-[#0a98a7] via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
             initial={{ opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -31,7 +32,7 @@ export default function JeMePresentePage() {
             JE ME PRÉSENTE
           </motion.h1>
           <motion.h2 
-          className='max-w-3xl pb-4 text-3xl text-white'
+          className='max-w-3xl pb-4 text-2xl sm:text-3xl'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -51,10 +52,10 @@ export default function JeMePresentePage() {
                        ease: [0, 0.71, 0.2, 1.01]
                      }}           
           >
-            <Separator />
+            <Separator className="hidden xl:block" />
           </motion.div>
           <motion.p 
-          className='max-w-3xl pb-4 text-white'
+          className='max-w-3xl pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -63,14 +64,14 @@ export default function JeMePresentePage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          J’ai rencontré le Shiatsu en 2010, année où j’ai commencé à en recevoir régulièrement et à ressentir 
+          J’ai rencontré le <span className="font-semibold">Shiatsu</span> en 2010, année où j’ai commencé à en recevoir régulièrement et à ressentir 
           les effets bienfaisants de cette technique.<br /><br /> Le Shiatsu m’a fait tant de bien que j’ai décidé en 2015 de 
           l’apprendre afin de pouvoir à mon tour apporter du bien être autour de moi.<br /><br /> C’est ainsi que j’ai reçu 
           en 2019 la certification de l’école Iokai et en 2022 le titre de Spécialiste en Shiatsu par le SPS 
           (Syndicat Professionnel du Shiatsu).
           </motion.p>
           <motion.p 
-          className='max-w-3xl pb-2 text-white'
+          className='max-w-3xl pb-2'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -83,7 +84,7 @@ export default function JeMePresentePage() {
           les tensions, et à approfondir ma pratique en découvrant de nouvelles techniques.<br /><br />
           </motion.p>
           <motion.p 
-          className='max-w-3xl pb-4 text-white'
+          className='max-w-3xl pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -98,7 +99,7 @@ export default function JeMePresentePage() {
           Enfin je me suis intéressée au pieds et à la Réflexologie plantaire que j’ai également appris à Evimeria.
           </motion.p>
           <motion.p 
-          className='max-w-lg text-white'
+          className='max-w-lg'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -111,7 +112,7 @@ export default function JeMePresentePage() {
           spécifiques de chacun. 
           </motion.p>
         </div>
-        <div className="pt-28">
+        <div className="pt-10 xl:pt-28 flex justify-center items-center">
           <Image
             src="/image/GuylaineProfil/guylaine2.jpeg"
             width={500}

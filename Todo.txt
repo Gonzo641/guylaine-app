@@ -2,9 +2,26 @@ Todo:
 
 Done - Fond gradient
 Done - Card pour les tarifs
-- Responsive
-    - Page d'acceuil voir à mettre limage grid pour les tablettes
+
+- Responsive :
+    - Done Accueil
+    - Done Shiatsu
+    - Done Chi Nei Tsang
+    - Done Réflexologie
+    - Done Je me présente
+    - Done Comment ca se passe
+    - Contact
 
 
-- Contact (utilisé Hover Card de shadcn pour insta/facebook)
+- Contact mettre resend (utilisé Hover Card de shadcn pour insta/facebook)
 - Reflexologie
+
+
+Color Logo:
+
+- Bleu Ciel : #2bcceb
+- Bleu Ciel clair : #8df6fa
+- Bleu Turquoise plus foncé : #0a98a7
+- Bleu Turquoise foncé : #0c9aa4
+- Bleu Turquoise intermédiaire : #0bada0
+- Bleu Turquoise clair : #09ba9d

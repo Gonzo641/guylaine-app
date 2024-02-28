@@ -17,7 +17,8 @@ export default function ContactPage() {
       <PolygonBackground />
       <div className='container'>
         <motion.h1 
-          className='mb-12 text-6xl font-bold text-white'
+          className='mb-12 text-6xl font-bold bg-gradient-to-r from-[#0a98a7] 
+                   via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -29,7 +30,7 @@ export default function ContactPage() {
           Contact
         </motion.h1>
         <motion.p 
-        className='max-w-lg pb-4 text-white'
+        className='max-w-lg pb-4'
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -41,7 +42,7 @@ export default function ContactPage() {
           Formulaire contact
         </motion.p>
         <motion.p 
-        className='max-w-lg text-white'
+        className='max-w-lg'
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0 }}
         transition={{

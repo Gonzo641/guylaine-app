@@ -22,10 +22,11 @@ export default function ChiNeiTsangPage() {
         className="-z-10 object-cover"
       /> */}
       <PolygonBackground />
-      <div className='container flex space-x-12'>
+      <div className='container flex flex-col xl:flex-row sm:space-x-12'>
         <div>
           <motion.h1 
-            className='mb-12 text-6xl font-bold text-white'
+            className='mb-12 text-4xl sm:text-6xl font-bold bg-gradient-to-r 
+                    from-[#0a98a7] via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
             initial={{ opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -37,7 +38,7 @@ export default function ChiNeiTsangPage() {
             LE CHI NEI TSANG
           </motion.h1>
           <motion.p 
-          className='max-w-3xl pb-4 text-white'
+          className='max-w-3xl pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -46,12 +47,12 @@ export default function ChiNeiTsangPage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          Le Chi Nei Tsang est un massage profond du ventre, qui permet de prendre conscience des tensions physiques nichées dans 
+          Le <span className="font-semibold">Chi Nei Tsang</span> est un massage profond du ventre, qui permet de prendre conscience des tensions physiques nichées dans 
           l’abdomen et des charges émotionnelles qui leur sont liées. <br /><br />
           Il détoxifie les organes interne et facilite leur fonctionnement.<br /> Il allège les tensions et facilite l’élimination. 
           </motion.p>
           <motion.p 
-          className='max-w-3xl pb-4 text-white'
+          className='max-w-3xl pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -66,7 +67,7 @@ export default function ChiNeiTsangPage() {
           Il permet d’agir à la fois sur le plan physique mais également de libérer les tensions émotionnelles. 
           </motion.p>
           <motion.p 
-          className='max-w-lg text-white'
+          className='max-w-lg'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -79,8 +80,8 @@ export default function ChiNeiTsangPage() {
           le massage.<br /> Elle se poursuit sur le ventre avec de l’huile. 
           </motion.p>
         </div>
-        <div>
-          <Carousel className="w-[400px] pt-12">
+        <div className="flex justify-center items-center px-8">
+          <Carousel className="max-w-[400px] pt-12">
             <CarouselContent>
               <CarouselItem>
               <Image

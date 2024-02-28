@@ -23,10 +23,11 @@ export default function ShiatsuPage() {
         className="-z-10 object-cover"
       /> */}
       <PolygonBackground />
-      <div className='container flex space-x-12'>
+      <div className='container flex flex-col xl:flex-row sm:space-x-12'>
         <div>
           <motion.h1 
-            className='mb-12 text-6xl font-bold text-white'
+            className='mb-12 text-4xl sm:text-6xl font-bold bg-gradient-to-r 
+                    from-[#0a98a7] via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
             initial={{ opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -38,7 +39,7 @@ export default function ShiatsuPage() {
             LE SHIATSU
           </motion.h1>
           <motion.p 
-          className='max-w-3xl pb-4 text-white'
+          className='max-w-3xl pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -47,13 +48,14 @@ export default function ShiatsuPage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          Littéralement, « Shiatsu » signifie « pression des doigts ».<br /><br /> C’est un art traditionnel japonais 
+          <span className="font-bold">Littéralement, « Shiatsu » signifie « pression des doigts ».</span>
+          <br /><br /> C’est un art traditionnel japonais 
           (fondé sur les principes de la médecine orientale) qui a une action préventive sur la santé et le bien-être, qui harmonise 
           et revitalise le corps.<br /><br /> Il détend corps et esprit et procure un calme tonique. Véritable anti-stress, le Shiatsu libère 
           les tensions.
           </motion.p>
           <motion.p 
-          className='max-w-2xl pb-4 text-white'
+          className='max-w-2xl pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -69,7 +71,7 @@ export default function ShiatsuPage() {
           états d’épuisement physique ou émotionnel…
           </motion.p>
           <motion.p 
-          className='max-w-lg pb-4 text-white'
+          className='max-w-lg pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -81,7 +83,7 @@ export default function ShiatsuPage() {
           Le Shiatsu favorise la relaxation profonde, calme l'esprit et permet ainsi la reconnexion à soi-même.
           </motion.p>
           <motion.p 
-          className='max-w-lg text-white'
+          className='max-w-lg'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -93,8 +95,8 @@ export default function ShiatsuPage() {
           Il se pratique, traditionnellement, sur les vêtements, en position couchée ou assise (sur un futon).
           </motion.p>
         </div>
-        <div>
-          <Carousel className="w-[400px] pt-12">
+        <div className="flex justify-center items-center px-8">
+          <Carousel className="max-w-[400px] pt-12">
             <CarouselContent>
               <CarouselItem>
               <Image
