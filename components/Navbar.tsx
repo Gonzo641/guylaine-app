@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className='pt-4 pb-2 flex flex-col'>
+      <nav className='pt-4 pb-2 flex flex-col z-50'>
         {/* <ul className='container hidden md:flex gap-6'> */}
         {/* <div className='flex flex-col'> */}
         <ul className='w-full flex flex-wrap justify-center sm:gap-6 gap-4'>
