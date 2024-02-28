@@ -15,7 +15,7 @@ const PolygonBackground = () => {
     //     </div>
     // </>
     <>
-        <div className="absolute inset-x-0 top-28 transform-gpu overflow-hidden blur-3xl"
+        <div className="absolute inset-x-0 top-20 transform-gpu overflow-hidden blur-3xl"
         aria-hidden="true">
 
         <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2

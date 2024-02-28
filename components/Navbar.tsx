@@ -55,7 +55,7 @@ export default function Navbar() {
             <Link href='/contact' className='hover:text-[#2bcceb] text-[#0c9aa4] sm:text-xl text-sm font-semibold'>Contact</Link>
           </li>
         </ul>
-        <div className='flex items-center justify-center pt-4'>
+        <div className='flex items-center justify-center pt-4 z-50'>
           <ThemeToggle />
         </div>
         {/* </div> */}
