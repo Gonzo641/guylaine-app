@@ -1,13 +1,16 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { motion } from 'framer-motion'
 import PolygonBackground from "@/components/PolygonBackground";
+import { toast } from "react-hot-toast";
+import SubmitBtn from '@/components/SubmitBtn';
+import { sendEmail } from '@/actions/sendEmail';
 
 
 export default function ContactPage() {
   return (
-    <section className='py-12'>
+    <section className='py-12 w[min(100%,38rem)]'>
       {/* <Image
         src="/image/Shiatsu/shiatsu2.jpeg"
         fill
@@ -29,20 +32,65 @@ export default function ContactPage() {
         >
           Contact
         </motion.h1>
+
+        <div className="flex justify-center">
+          <motion.p 
+          className='max-w-lg pb-4 text-center'
+          initial={{ opacity: 0, y: 100}}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            delay: 1,
+            ease: [0, 0.71, 0.2, 1.01]
+          }}
+          >
+            Merci de me contacter par e-mail à{" "} 
+            <a className="underline" href="mailto:guylaine.cauchard@gmail.com">
+              guylaine.cauchard@gmail.com
+            </a>{" "}
+            ou via ce formulaire :
+          </motion.p>
+        </div>
+
+          <form 
+              className="mt-10 flex flex-col dark:text-black"
+              action={async (formData) => {
+                  const { data, error } = await sendEmail(formData);
+
+                  if (error) {
+                      toast.error(error);
+                      return;
+                  }
+
+                  toast.success("Email envoyé !")
+              }}    
+          >
+              <input 
+              className="h-14 px-4 rounded-lg border border-gray-500
+                      dark:bg-white dark:bg-opacity-80
+                        dark:focus:bg-opacity-100 transition-all
+                        dark:outline-none"
+              name="senderEmail" 
+              type="email"
+              required
+              maxLength={500}
+              placeholder="Votre email" />
+              <textarea 
+              className="h-52 my-3 rounded-lg border border-gray-500 p-4
+                      dark:bg-white dark:bg-opacity-80
+                        dark:focus:bg-opacity-100 transition-all
+                        dark:outline-none"
+              name="message"
+              placeholder="Votre message"
+              required
+              maxLength={5000} 
+          />
+          <SubmitBtn />
+          </form>
+
+
         <motion.p 
-        className='max-w-lg pb-4'
-        initial={{ opacity: 0, y: 100}}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.8,
-          delay: 1,
-          ease: [0, 0.71, 0.2, 1.01]
-        }}
-        >
-          Formulaire contact
-        </motion.p>
-        <motion.p 
-        className='max-w-lg'
+        className='max-w-lg mt-12'
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0 }}
         transition={{

@@ -13,7 +13,8 @@ Done - Card pour les tarifs
     - Contact
 
 
-- Contact mettre resend (utilisé Hover Card de shadcn pour insta/facebook)
+- Done Contact mettre resend 
+- Utilisé Hover Card de shadcn pour insta/facebook
 - Reflexologie
 
 
