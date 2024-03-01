@@ -1,9 +1,12 @@
 "use client";
 
 import Link from 'next/link'
+import { FaInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+
+import { ThemeToggle } from './ThemeToogle'
 import { Separator } from "@/components/ui/separator"
 import NavbarMobile from './NavbarMobile'
-import { ThemeToggle } from './ThemeToogle'
 
 
 
@@ -11,7 +14,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className='pt-4 pb-2 flex flex-col z-50'>
+      <nav className='pt-4 pb-4 flex flex-col z-50'>
         {/* <ul className='container hidden md:flex gap-6'> */}
         {/* <div className='flex flex-col'> */}
         <ul className='w-full flex flex-wrap justify-center sm:gap-6 gap-4'>
@@ -55,9 +58,23 @@ export default function Navbar() {
             <Link href='/contact' className='hover:text-[#2bcceb] text-[#0c9aa4] sm:text-xl text-sm font-semibold'>Contact</Link>
           </li>
         </ul>
-        <div className='flex items-center justify-center pt-4 z-50'>
-          <ThemeToggle />
-        </div>
+        {/* <div className='flex items-center justify-center pt-4 z-50 gap-2'>
+          <ThemeToggle /> */}
+          {/* <a 
+            href="https://www.instagram.com" 
+            target="_blank"
+            className='text-2xl hover:scale-[1.15] transition'
+          >
+            <FaInstagram />
+          </a>
+          <a 
+            href="https://www.facebook.com" 
+            target="_blank"
+            className='text-2xl hover:scale-[1.15] transition'
+          >
+            <FaFacebook />
+          </a> */}
+        {/* </div> */}
         {/* </div> */}
         {/* <NavbarMobile /> */}
       </nav>
