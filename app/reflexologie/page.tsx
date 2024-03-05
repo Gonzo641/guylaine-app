@@ -30,7 +30,8 @@ export default function ReflexologiePage() {
           LA RÉFLEXOLOGIE
         </motion.h1>
         <div className="flex flex-col xl:flex-row">
-          <motion.h2 
+          Coming soon...
+          {/* <motion.h2 
             className='mb-12 text-xl sm:text-3xl font-bold'
             initial={{ opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0 }}
@@ -53,7 +54,7 @@ export default function ReflexologiePage() {
             }}
           >
             La réflexologie plantaire
-          </motion.h2>
+          </motion.h2> */}
         </div>
         {/* <motion.p 
         className='max-w-lg pb-4'
