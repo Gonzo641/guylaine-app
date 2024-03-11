@@ -83,7 +83,7 @@ export default function ChiNeiTsangPage() {
         <div className="flex justify-center items-center px-8">
           <Carousel className="max-w-[400px] pt-12">
             <CarouselContent>
-              <CarouselItem>
+              {/* <CarouselItem>
               <Image
                 src="/image/ChiNeiTsang/chineitsang1.jpeg"
                 width={500}
@@ -91,7 +91,7 @@ export default function ChiNeiTsangPage() {
                 alt="image"
                 className="object-cover rounded-xl"
               />
-              </CarouselItem>
+              </CarouselItem> */}
               <CarouselItem>
               <Image
                 src="/image/ChiNeiTsang/chineitsang2.jpeg"

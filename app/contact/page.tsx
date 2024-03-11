@@ -24,7 +24,7 @@ export default function ContactPage() {
       <div className='container'>
         <motion.h1 
           className='mb-12 text-6xl font-bold bg-gradient-to-r from-[#0a98a7] 
-                   via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
+                   via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text uppercase'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -48,8 +48,8 @@ export default function ContactPage() {
           }}
           >
             Merci de me contacter par e-mail à{" "} 
-            <a className="underline" href="mailto:guylaine.cauchard@gmail.com">
-              guylaine.cauchard@gmail.com
+            <a className="underline" href="mailto:guylaineshiatsu@gmail.com">
+              guylaineshiatsu@gmail.com
             </a>{" "}
             ou via ce formulaire :
           </motion.p>

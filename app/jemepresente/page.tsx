@@ -18,7 +18,7 @@ export default function JeMePresentePage() {
       <PolygonBackground />
       <div className='container flex flex-col xl:flex-row xl:space-x-12'>
         <div>
-          <motion.h1 
+          {/* <motion.h1 
             className='mb-12 text-4xl sm:text-6xl font-bold bg-gradient-to-r 
                     from-[#0a98a7] via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
             initial={{ opacity: 0, y: 100}}
@@ -53,9 +53,9 @@ export default function JeMePresentePage() {
                      }}           
           >
             <Separator className="hidden xl:block" />
-          </motion.div>
+          </motion.div> */}
           <motion.p 
-          className='max-w-3xl pb-4'
+          className='max-w-3xl pb-4 xl:pt-28'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -93,10 +93,14 @@ export default function JeMePresentePage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          La première zone a été le ventre et je me suis formée au Tchi Nei Tsang auprès de Anne Moreau. 
-          La seconde a été la crâne, la nuque, les épaules au travers de la Réflexologie cranio-faciale que j’ai appris 
-          à l’école Evimeria.<br />
-          Enfin je me suis intéressée au pieds et à la Réflexologie plantaire que j’ai également appris à Evimeria.
+          Passionnée par le ventre, notre cerveau émotionnel, je me suis formée au Chi Nei Tsang<br />
+          auprès de 
+          <a href="https://www.google.com/maps/place/Massage:+Relaxation+%26+Bien-être+40+Anne+Moreau/@43.6697851,-1.3900687,17z/data=!3m1!4b1!4m6!3m5!1s0xd515b1c44a6b979:0xbbd9796f8c99de84!8m2!3d43.6697851!4d-1.3900687!16s%2Fg%2F11g_y6twz7?entry=ttu
+          " className="text-[#09ba9d] hover:text-[#0c9aa4]"> Anne Moreau
+          </a>.
+          <br /> Son enseignement est basé sur les principes de l’école de Mantak Chia.<br /><br />
+          J’ai également choisi d’apprendre la Réflexologie Cranio-faciale et Plantaire afin d’explorer 
+          ces zones Yang (la tête) et Yin (les pieds) du corps. Je me suis formée à l’école Evimeria.
           </motion.p>
           <motion.p 
           className='max-w-lg'

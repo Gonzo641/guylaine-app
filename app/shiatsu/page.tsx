@@ -100,7 +100,7 @@ export default function ShiatsuPage() {
             <CarouselContent>
               <CarouselItem>
               <Image
-                src="/image/Shiatsu/shiatsu1.jpeg"
+                src="/image/Shiatsu/shiatsu3.jpeg"
                 width={500}
                 height={200}
                 alt="image"
@@ -116,7 +116,7 @@ export default function ShiatsuPage() {
                 className="object-cover rounded-xl"
               />
               </CarouselItem>
-              <CarouselItem>
+              {/* <CarouselItem>
               <Image
                 src="/image/Shiatsu/shiatsu3.jpeg"
                 width={500}
@@ -124,7 +124,7 @@ export default function ShiatsuPage() {
                 alt="image"
                 className="object-cover rounded-xl"
               />
-              </CarouselItem>
+              </CarouselItem> */}
               <CarouselItem>
               <Image
                 src="/image/Shiatsu/shiatsu4.jpeg"

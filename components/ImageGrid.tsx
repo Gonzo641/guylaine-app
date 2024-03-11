@@ -28,7 +28,7 @@ const ImageGrid = () => {
         className="object-cover rounded-lg"
       />
       <Image
-        src="/image/Shiatsu/shiatsu3.jpeg"
+        src="/image/ReflexologiePlantaire/reflexoplantaire1.jpeg"
         width={200}
         height={200}
         alt="image"

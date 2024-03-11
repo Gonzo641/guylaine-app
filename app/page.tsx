@@ -27,7 +27,7 @@ export default function Home() {
               className="object-cover" 
             />
           </div>
-          <div className="flex justify-center items-center">
+          {/* <div className="flex justify-center items-center">
             <motion.h1 
               className='mb-12 sm:text-6xl text-4xl font-bold text-center'
               initial={{ opacity: 0, x: 100}}
@@ -40,8 +40,8 @@ export default function Home() {
             >
               Bonjour et bienvenue
             </motion.h1>
-          </div>
-          <div className="flex justify-center items-center">
+          </div> */}
+          <div className="flex justify-center items-center mt-4">
             <motion.p 
             className='max-w-3xl pb-4 text-center font-semibold'
             initial={{ opacity: 0, y: 100}}
@@ -52,13 +52,13 @@ export default function Home() {
               ease: [0, 0.71, 0.2, 1.01]
             }}
             >
-              Envie de vous offrir une parenthèse de douceur ? Ou de l’offrir à une personne chère ? 
-              <br />Je vous invite à découvrir les différents soins que je propose. 
+              Envie de vous offrir une parenthèse de douceur ?<br /><br /> Ou de l’offrir à une personne chère ? 
+              <br /><br />Je vous invite à découvrir les différents soins que je propose. 
             </motion.p>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mt-2">
             <motion.p 
-            className='max-w-3xl text-center font-semibold'
+            className='max-w-3xl xl:mx-4 text-center font-semibold'
             initial={{ opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0 }}
             transition={{
