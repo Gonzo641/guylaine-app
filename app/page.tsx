@@ -43,7 +43,7 @@ export default function Home() {
           </div> */}
           <div className="flex justify-center items-center mt-4">
             <motion.p 
-            className='max-w-3xl pb-4 text-center font-semibold'
+            className='max-w-3xl pb-4 text-center font-semibold px-2 sm:px-0'
             initial={{ opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -52,7 +52,9 @@ export default function Home() {
               ease: [0, 0.71, 0.2, 1.01]
             }}
             >
-              Envie de vous offrir une parenthèse de douceur ?<br /><br /> Ou de l’offrir à une personne chère ? 
+              <span className="text-xl">Envie de vous offrir une parenthèse de douceur ?</span>
+              <br /><br /> 
+              <span className="text-xl">Ou de l’offrir à une personne chère ?</span> 
               <br /><br />Je vous invite à découvrir les différents soins que je propose. 
             </motion.p>
           </div>
