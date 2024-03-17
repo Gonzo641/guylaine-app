@@ -56,7 +56,7 @@ export default function ContactPage() {
         </div>
 
           <form 
-              className="mt-10 flex flex-col dark:text-black px-96"
+              className="mt-10 flex flex-col dark:text-black lg:px-56 xl:px-96"
               action={async (formData) => {
                   const { data, error } = await sendEmail(formData);
 
