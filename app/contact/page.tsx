@@ -22,7 +22,7 @@ export default function ContactPage() {
       /> */}
       <PolygonBackground />
       <div className='container'>
-        <motion.h1 
+        {/* <motion.h1 
           className='mb-12 text-6xl font-bold bg-gradient-to-r from-[#0a98a7] 
                    via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text uppercase'
           initial={{ opacity: 0, y: 100}}
@@ -34,9 +34,9 @@ export default function ContactPage() {
           }}
         >
           Contact
-        </motion.h1>
+        </motion.h1> */}
 
-        <div className="flex justify-center">
+        <div className="flex justify-center pt-8">
           <motion.p 
           className='max-w-lg pb-4 text-center'
           initial={{ opacity: 0, y: 100}}

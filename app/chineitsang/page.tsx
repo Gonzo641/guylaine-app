@@ -47,9 +47,9 @@ export default function ChiNeiTsangPage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          Le <span className="font-semibold">Chi Nei Tsang</span> est un massage profond du ventre, qui permet de prendre conscience des tensions physiques nichées dans 
+          Le <span className="font-semibold text-[#0a98a7]">Chi Nei Tsang</span> est un massage profond du ventre, qui permet de prendre conscience des tensions physiques nichées dans 
           l’abdomen et des charges émotionnelles qui leur sont liées. <br /><br />
-          Il détoxifie les organes interne et facilite leur fonctionnement.<br /> Il allège les tensions et facilite l’élimination. 
+          Il <span className="text-[#0a98a7]">détoxifie</span>  les organes interne et facilite leur fonctionnement.<br /> Il allège les tensions et facilite l’élimination. 
           </motion.p>
           <motion.p 
           className='max-w-3xl pb-4'
@@ -63,8 +63,8 @@ export default function ChiNeiTsangPage() {
           >
           Le Chi Nei Tsang est une approche viscérale et holistique.<br /><br /> Ce massage à la fois très doux mais également profond et 
           dynamique, va aider les organes internes du corps à fonctionner plus facilement.<br /><br /> Mais il va également permettre de se 
-          reconnecter à son corps, de dénouer tensions et douleurs périphériques, de retrouver vitalité et bien-être. <br />
-          Il permet d’agir à la fois sur le plan physique mais également de libérer les tensions émotionnelles. 
+          <span className="text-[#0a98a7]"> reconnecter à son corps</span> , de dénouer tensions et douleurs périphériques, de retrouver vitalité et bien-être. <br />
+          Il permet d’agir à la fois sur le plan physique mais également de libérer les <span className="text-[#0a98a7]">tensions émotionnelles.</span>  
           </motion.p>
           <motion.p 
           className='max-w-lg'

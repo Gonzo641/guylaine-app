@@ -18,7 +18,7 @@ const TarifCard = () => {
                       }}
         >
             <h3 className="text-base font-bold text-white">
-            Les tarifs des soins (quels qu’ils soient) sont les suivants :
+            Les tarifs des soins sont les suivants :
             </h3>
             <ul className="mt-2 space-y-2 text-md dark:text-black">
                 <li>

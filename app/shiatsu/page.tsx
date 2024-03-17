@@ -48,10 +48,10 @@ export default function ShiatsuPage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          <span className="font-bold">Littéralement, « Shiatsu » signifie « pression des doigts ».</span>
+          <span className="font-bold">Littéralement, <span className="text-[#09ba9d]">« Shiatsu »</span> signifie « pression des doigts ».</span>
           <br /><br /> C’est un art traditionnel japonais 
-          (fondé sur les principes de la médecine orientale) qui a une action préventive sur la santé et le bien-être, qui harmonise 
-          et revitalise le corps.<br /><br /> Il détend corps et esprit et procure un calme tonique. Véritable anti-stress, le Shiatsu libère 
+          (fondé sur les principes de la médecine orientale) qui a une <span className="text-[#09ba9d]">action préventive</span>  sur la santé et le bien-être, qui harmonise 
+          et revitalise le corps.<br /><br /> Il détend corps et esprit et procure un calme tonique. Véritable <span className="text-[#09ba9d]">anti-stress</span> , le Shiatsu libère 
           les tensions.
           </motion.p>
           <motion.p 
@@ -66,7 +66,7 @@ export default function ShiatsuPage() {
           >
           C’est une technique simple et puissante dont l’objectif est de rendre à l’organisme, grâce à un travail
           de pressions stables et précises (effectuées avec les mains, les pouces, les doigts) le long des méridiens, 
-          toute sa vitalité et toute sa capacité d’auto-guérison.<br /><br /> Ainsi, il permet d'agir sur le plan physiologique et sur 
+          toute sa vitalité et toute sa capacité <span className="text-[#09ba9d]">d’auto-guérison.</span> <br /><br /> Ainsi, il permet d'agir sur le plan physiologique et sur 
           le plan émotionnel. Il est excellent pour lutter contre toutes les causes du stress, contre les douleurs, troubles, 
           états d’épuisement physique ou émotionnel…
           </motion.p>
@@ -80,7 +80,7 @@ export default function ShiatsuPage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          Le Shiatsu favorise la relaxation profonde, calme l'esprit et permet ainsi la reconnexion à soi-même.
+          Le Shiatsu favorise la relaxation profonde, calme l'esprit et permet ainsi la <span className="text-[#09ba9d]">reconnexion à soi-même.</span> 
           </motion.p>
           <motion.p 
           className='max-w-lg'

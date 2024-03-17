@@ -69,8 +69,8 @@ export default function Home() {
               ease: [0, 0.71, 0.2, 1.01]
             }}
             >
-              Le point commun entre tous est de procurer une profonde relaxation du corps et de l’esprit et un éveil 
-              du corps.<br /><br /> Ils invitent à se reconnecter au corps afin de lui permettre de retrouver sa vitalité, 
+              Le point commun entre tous est de procurer une <span className="text-[#0a98a7]">profonde relaxation du corps</span>  et de l’esprit et un éveil 
+              du corps.<br /><br /> Ils invitent à se <span className="text-[#0a98a7]">reconnecter au corps</span>  afin de lui permettre de retrouver sa vitalité, 
               et donc de le libérer des tensions, douleurs, fatigue, épuisement… 
             </motion.p>
           </div>

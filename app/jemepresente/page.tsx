@@ -64,10 +64,10 @@ export default function JeMePresentePage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          J’ai rencontré le <span className="font-semibold">Shiatsu</span> en 2010, année où j’ai commencé à en recevoir régulièrement et à ressentir 
+          J’ai rencontré le <span className="font-semibold text-[#09ba9d]">Shiatsu</span> en 2010, année où j’ai commencé à en recevoir régulièrement et à ressentir 
           les effets bienfaisants de cette technique.<br /><br /> Le Shiatsu m’a fait tant de bien que j’ai décidé en 2015 de 
           l’apprendre afin de pouvoir à mon tour apporter du bien être autour de moi.<br /><br /> C’est ainsi que j’ai reçu 
-          en 2019 la certification de l’école Iokai et en 2022 le titre de Spécialiste en Shiatsu par le SPS 
+          en 2019 la certification de l’école <span className="text-[#09ba9d]"> Iokai</span> et en 2022 le titre de Spécialiste en Shiatsu par le SPS 
           (Syndicat Professionnel du Shiatsu).
           </motion.p>
           <motion.p 
@@ -93,13 +93,13 @@ export default function JeMePresentePage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          Passionnée par le ventre, notre cerveau émotionnel, je me suis formée au Chi Nei Tsang<br />
+          Passionnée par le ventre, notre cerveau émotionnel, je me suis formée au <span className="text-[#09ba9d]">Chi Nei Tsang</span><br />
           auprès de 
           <a href="https://www.google.com/maps/place/Massage:+Relaxation+%26+Bien-être+40+Anne+Moreau/@43.6697851,-1.3900687,17z/data=!3m1!4b1!4m6!3m5!1s0xd515b1c44a6b979:0xbbd9796f8c99de84!8m2!3d43.6697851!4d-1.3900687!16s%2Fg%2F11g_y6twz7?entry=ttu
           " className="text-[#09ba9d] hover:text-[#0c9aa4]"> Anne Moreau
           </a>.
           <br /> Son enseignement est basé sur les principes de l’école de Mantak Chia.<br /><br />
-          J’ai également choisi d’apprendre la Réflexologie Cranio-faciale et Plantaire afin d’explorer 
+          J’ai également choisi d’apprendre la <span className="text-[#09ba9d]">Réflexologie</span>  Cranio-faciale et Plantaire afin d’explorer 
           ces zones Yang (la tête) et Yin (les pieds) du corps. Je me suis formée à l’école Evimeria.
           </motion.p>
           <motion.p 
@@ -112,8 +112,8 @@ export default function JeMePresentePage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
           >
-          Ces pratiques très complémentaires me permettent aujourd’hui de proposer des séances adaptées aux besoins 
-          spécifiques de chacun. 
+          Ces pratiques très complémentaires me permettent aujourd’hui de proposer des séances <span className="text-[#09ba9d]">adaptées aux besoins 
+          spécifiques de chacun.</span>  
           </motion.p>
         </div>
         <div className="pt-10 xl:pt-28 flex justify-center items-center">
