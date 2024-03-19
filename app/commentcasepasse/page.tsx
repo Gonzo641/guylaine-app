@@ -176,20 +176,10 @@ export default function CommentCaSePassePage() {
         >
         Je peux vous recevoir chez moi ou me déplacer à votre domicile.
         </motion.p>
+
         <TarifCard />
-        <motion.p 
-          className='max-w-lg pt-10 text-center font-semibold'
-          initial={{ opacity: 0, y: 100}}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.8,
-            delay: 1.5,
-            ease: [0, 0.71, 0.2, 1.01]
-          }}
-        >
-        Comptez un supplément de 5€ pour un déplacement à domicile.  
-        </motion.p>
-        <motion.p 
+
+        {/* <motion.p 
           className='max-w-lg pt-4 text-center font-semibold'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
@@ -205,7 +195,7 @@ export default function CommentCaSePassePage() {
           </Link> .
           <br /> À vous de choisir le montant / 
           la durée du soin que vous souhaitez offrir et je me charge du reste.   
-        </motion.p>
+        </motion.p> */}
         {/* <motion.div className="w-96 h-[34rem] mt-6"
                     initial={{ opacity: 0, y: 100}}
                     animate={{ opacity: 1, y: 0 }}
@@ -223,6 +213,19 @@ export default function CommentCaSePassePage() {
             />
           </Link>
         </motion.div> */}
+
+        <motion.p 
+          className='max-w-lg text-xs pt-10 text-center font-semibold'
+          initial={{ opacity: 0, y: 100}}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            delay: 1.5,
+            ease: [0, 0.71, 0.2, 1.01]
+          }}
+        >
+        Comptez un supplément de 5€ pour un déplacement à domicile.  
+        </motion.p>
       </div>
     </section>
   )

@@ -7,6 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 import { ThemeToggle } from './ThemeToogle'
 import { Separator } from "@/components/ui/separator"
 import NavbarMobile from './NavbarMobile'
+import Image from 'next/image';
 
 
 
@@ -17,9 +18,15 @@ export default function Navbar() {
       <nav className='pt-4 pb-4 flex flex-col z-50'>
         {/* <ul className='container hidden md:flex gap-6'> */}
         {/* <div className='flex flex-col'> */}
-        <ul className='w-full flex flex-wrap justify-center sm:gap-6 gap-4'>
+        <ul className='w-full flex flex-wrap justify-center items-center sm:gap-6 gap-3'>
           <li>
-            <Link href='/' className='hover:text-[#2bcceb] text-[#0c9aa4] sm:text-xl text-sm font-semibold'>Accueil</Link>
+            <Link href='/' className='hover:text-[#2bcceb] text-[#0c9aa4] sm:text-xl text-sm font-semibold'>
+              <Image src="/image/Logo/Logo_Guylaine1.png" 
+                     alt='logo'
+                     width={100}
+                     height={100} 
+              />
+            </Link>
           </li>
           <span>
           <Separator orientation='vertical' className='bg-slate-200 dark:bg-slate-800'/>

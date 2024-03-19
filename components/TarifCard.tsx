@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion'
+import Link from 'next/link';
 
 const TarifCard = () => {
   return (
@@ -74,6 +75,43 @@ const TarifCard = () => {
                 3 soins de 45 minutes <span className="text-white font-bold">120€</span>
                 </li>
             </ul>
+        </motion.div>
+
+        <motion.div className="flex flex-col justify-between rounded-3xl bg-gradient-to-r 
+                            from-[#0a98a7] to-[#0bada0] p-8 
+                              shadow-xl ring-1 ring-gray-900/10 sm:p-10 z-50"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+                duration: 1,
+                delay: 1.1,
+                ease: [0, 0.71, 0.2, 1.01]
+              }}
+        >
+          <p className='max-w-lg pt-4 text-center font-semibold'>
+            Des Cartes Cadeaux sont disponible {" "}
+          <Link href="image/bon-cadeau.jpeg" className="dark:text-black text-white hover:text-[#0a98a7]">
+            ici
+          </Link> .
+          <br /> À vous de choisir le montant / 
+          la durée du soin que vous souhaitez offrir et je me charge du reste.   
+        </p>
+        </motion.div>
+
+        <motion.div className="flex flex-col justify-center items-center rounded-3xl bg-gradient-to-r 
+                            from-[#0a98a7] to-[#0bada0] p-8 
+                              shadow-xl ring-1 ring-gray-900/10 sm:p-10 z-50"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+                duration: 1,
+                delay: 1.3,
+                ease: [0, 0.71, 0.2, 1.01]
+              }}
+        >
+            <p className='max-w-lg pt-4 text-center font-semibold'>
+                Le shiatsu et la réflexologie peuvent être pris en charge par certaines mutuelles.
+            </p>
         </motion.div>
 
     </div>
