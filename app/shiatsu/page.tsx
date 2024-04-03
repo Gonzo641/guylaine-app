@@ -24,7 +24,7 @@ export default function ShiatsuPage() {
       /> */}
       <PolygonBackground />
       <div className='container flex flex-col xl:flex-row sm:space-x-12'>
-        <div>
+        <div className="lg:px-36">
           <motion.h1 
             className='mb-12 text-4xl sm:text-6xl font-bold bg-gradient-to-r 
                     from-[#0a98a7] via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
@@ -50,8 +50,8 @@ export default function ShiatsuPage() {
           >
           <span className="font-bold">Littéralement, <span className="text-[#09ba9d]">« Shiatsu »</span> signifie « pression des doigts ».</span>
           <br /><br /> C’est un art traditionnel japonais 
-          (fondé sur les principes de la médecine orientale) qui a une <span className="text-[#09ba9d]">action préventive</span>  sur la santé et le bien-être, qui harmonise 
-          et revitalise le corps.<br /><br /> Il détend corps et esprit et procure un calme tonique. Véritable <span className="text-[#09ba9d]">anti-stress</span> , le Shiatsu libère 
+          (fondé sur les principes de la médecine orientale) qui a une<br /> <span className="text-[#09ba9d]">action préventive</span>  sur la santé et le bien-être, qui harmonise 
+          et revitalise le corps.<br /><br /> Il détend corps et esprit et procure un calme tonique. Véritable <span className="text-[#09ba9d]">anti-stress</span>,<br/> le Shiatsu libère 
           les tensions.
           </motion.p>
           <motion.p 
@@ -71,7 +71,7 @@ export default function ShiatsuPage() {
           états d’épuisement physique ou émotionnel…
           </motion.p>
           <motion.p 
-          className='max-w-lg pb-4'
+          className='max-w-2xl pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -83,7 +83,7 @@ export default function ShiatsuPage() {
           Le Shiatsu favorise la relaxation profonde, calme l'esprit et permet ainsi la <span className="text-[#09ba9d]">reconnexion à soi-même.</span> 
           </motion.p>
           <motion.p 
-          className='max-w-lg'
+          className='max-w-2xl'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -96,7 +96,7 @@ export default function ShiatsuPage() {
           </motion.p>
         </div>
         <div className="flex justify-center items-center px-8">
-          <Carousel className="max-w-[400px] pt-12">
+          <Carousel className="max-w-[400px] pt-12 lg:pt-[9rem]">
             <CarouselContent>
               <CarouselItem>
               <Image

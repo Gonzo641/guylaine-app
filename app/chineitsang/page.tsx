@@ -23,7 +23,7 @@ export default function ChiNeiTsangPage() {
       /> */}
       <PolygonBackground />
       <div className='container flex flex-col xl:flex-row sm:space-x-12'>
-        <div>
+        <div className="lg:px-36">
           <motion.h1 
             className='mb-12 text-4xl sm:text-6xl font-bold bg-gradient-to-r 
                     from-[#0a98a7] via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
@@ -38,7 +38,7 @@ export default function ChiNeiTsangPage() {
             LE CHI NEI TSANG
           </motion.h1>
           <motion.p 
-          className='max-w-3xl pb-4'
+          className='max-w-lg pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -52,7 +52,7 @@ export default function ChiNeiTsangPage() {
           Il <span className="text-[#0a98a7]">détoxifie</span>  les organes interne et facilite leur fonctionnement.<br /> Il allège les tensions et facilite l’élimination. 
           </motion.p>
           <motion.p 
-          className='max-w-3xl pb-4'
+          className='max-w-lg pb-4'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -62,8 +62,8 @@ export default function ChiNeiTsangPage() {
           }}
           >
           Le Chi Nei Tsang est une approche viscérale et holistique.<br /><br /> Ce massage à la fois très doux mais également profond et 
-          dynamique, va aider les organes internes du corps à fonctionner plus facilement.<br /><br /> Mais il va également permettre de se 
-          <span className="text-[#0a98a7]"> reconnecter à son corps</span> , de dénouer tensions et douleurs périphériques, de retrouver vitalité et bien-être. <br />
+          dynamique,<br /> va aider les organes internes du corps à fonctionner plus facilement.<br /><br /> Mais il va également permettre de se 
+          <span className="text-[#0a98a7]"> reconnecter à son corps</span>, de dénouer tensions et douleurs périphériques, de retrouver vitalité et bien-être. <br />
           Il permet d’agir à la fois sur le plan physique mais également de libérer les <span className="text-[#0a98a7]">tensions émotionnelles.</span>  
           </motion.p>
           <motion.p 
@@ -81,7 +81,7 @@ export default function ChiNeiTsangPage() {
           </motion.p>
         </div>
         <div className="flex justify-center items-center px-8">
-          <Carousel className="max-w-[400px] pt-12">
+          <Carousel className="max-w-[400px] pt-12 lg:pt-[7rem]">
             <CarouselContent>
               {/* <CarouselItem>
               <Image

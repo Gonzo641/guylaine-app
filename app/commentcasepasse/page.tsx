@@ -174,7 +174,7 @@ export default function CommentCaSePassePage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
         >
-        Je peux vous recevoir chez moi ou me déplacer à votre domicile.
+        Je peux vous recevoir chez moi ou me déplacer à votre domicile*.
         </motion.p>
 
         <TarifCard />
@@ -224,7 +224,7 @@ export default function CommentCaSePassePage() {
             ease: [0, 0.71, 0.2, 1.01]
           }}
         >
-        Comptez un supplément de 5€ pour un déplacement à domicile.  
+        *Comptez un supplément de 5€ pour un déplacement à domicile.  
         </motion.p>
       </div>
     </section>

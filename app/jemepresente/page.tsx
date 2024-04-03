@@ -17,7 +17,7 @@ export default function JeMePresentePage() {
       /> */}
       <PolygonBackground />
       <div className='container flex flex-col xl:flex-row xl:space-x-12'>
-        <div>
+        <div className="lg:px-28">
           {/* <motion.h1 
             className='mb-12 text-4xl sm:text-6xl font-bold bg-gradient-to-r 
                     from-[#0a98a7] via-[#0bada0] to-[#8df6fa] text-transparent bg-clip-text'
@@ -103,7 +103,7 @@ export default function JeMePresentePage() {
           ces zones Yang (la tête) et Yin (les pieds) du corps. Je me suis formée à l’école Evimeria.
           </motion.p>
           <motion.p 
-          className='max-w-lg'
+          className='max-w-3xl'
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0 }}
           transition={{
